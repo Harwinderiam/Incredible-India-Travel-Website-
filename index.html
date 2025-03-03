@@ -1,84 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Incredible India Travel Blog</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
     <nav class="nav">
-        <ul>
-            <li><a href="destination.html">Destinations</a></li>
-            <li><a href="#culture">Culture</a></li>
-            <li><a href="#food">Food</a></li>
-            <li><a href="#festivals">Festivals</a></li>
-            <li><a href="#tips">Travel Tips</a></li>
-        </ul>
+      <div class="logo">
+        <img src="logo.jpg" alt="Incredible India Logo" />
+      </div>
+      <ul>
+        <li><a href="destination.html">Destinations</a></li>
+        <li><a href="culture.html">Culture</a></li>
+        <li><a href="food.html">Food</a></li>
+        <li><a href="festivals.html">Festivals</a></li>
+        <li><a href="traveltips.html">Travel Tips</a></li>
+      </ul>
+      <div class="nav-icons">
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+      </div>
     </nav>
 
+    <!-- Header -->
     <header class="header">
-        <h1>Incredible India</h1>
-        <p>Discover the Land of Diversity</p>
+      <div class="header-content">
+        <h1 class="animate__animated animate__fadeInDown">Incredible India</h1>
+        <p class="animate__animated animate__fadeInUp">
+          Discover the Land of Diversity
+        </p>
+        <div class="header-cta animate__animated animate__fadeInUp">
+          <a href="#featured" class="btn btn-primary">Explore Destinations</a>
+          <a href="#recent" class="btn btn-secondary">Recent Adventures</a>
+        </div>
+      </div>
     </header>
 
-    <section class="featured-post">
-        <h2>Featured Story</h2>
-        <div class="featured-card">
-            <div class="featured-image"></div>
-            <div class="featured-content">
-                <h3>The Majestic Taj Mahal</h3>
-                <p class="location">Agra, Uttar Pradesh</p>
-                <p class="date">March 15, 2025</p>
-                <p>Experience the breathtaking beauty of India's most iconic monument. The Taj Mahal, a UNESCO World Heritage site, stands as a testament to eternal love and architectural brilliance...</p>
-                <a href="#" class="read-more">Read More →</a>
-            </div>
+    <!-- Featured Post -->
+    <section id="featured" class="featured-post">
+      <h2>Featured Story</h2>
+      <div class="featured-card">
+        <div
+          class="featured-image"
+          style="background-image: url('images/taj-mahal.jpg')"
+        ></div>
+        <div class="featured-content">
+          <h3>The Majestic Taj Mahal</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt"></i> Agra, Uttar Pradesh
+          </p>
+          <p class="date"><i class="fas fa-calendar-alt"></i> March 15, 2025</p>
+          <p>
+            Experience the breathtaking beauty of India's most iconic monument.
+            The Taj Mahal, a UNESCO World Heritage site, stands as a testament
+            to eternal love and architectural brilliance...
+          </p>
+          <a href="taj-mahal.html" class="read-more">Read More →</a>
         </div>
+      </div>
     </section>
 
-    <section class="recent-posts">
-        <h2>Recent Adventures</h2>
-        <div class="posts-grid">
-            <article class="post-card">
-                <div class="post-image"></div>
-                <div class="post-content">
-                    <h3>Backwaters of Kerala</h3>
-                    <p class="location">Kerala</p>
-                    <p>Cruise through the serene backwaters of Kerala in a traditional houseboat...</p>
-                </div>
-            </article>
-
-            <article class="post-card">
-                <div class="post-image"></div>
-                <div class="post-content">
-                    <h3>Golden Temple</h3>
-                    <p class="location">Amritsar, Punjab</p>
-                    <p>Visit the spiritual heart of Sikhism and experience its divine atmosphere...</p>
-                </div>
-            </article>
-
-            <article class="post-card">
-                <div class="post-image"></div>
-                <div class="post-content">
-                    <h3>Rann of Kutch</h3>
-                    <p class="location">Gujarat</p>
-                    <p>Explore the mesmerizing white desert and vibrant cultural heritage...</p>
-                </div>
-            </article>
-        </div>
+    <!-- Recent Adventures -->
+    <section id="recent" class="recent-posts">
+      <h2>Recent Adventures</h2>
+      <div class="posts-grid">
+        <article class="post-card">
+          <div
+            class="post-image"
+            style="background-image: url('Kerala.jpg')"
+          ></div>
+          <div class="post-content">
+            <h3>Backwaters of Kerala</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i> Kerala</p>
+            <p>
+              Cruise through the serene backwaters of Kerala in a traditional
+              houseboat, experiencing the tranquil beauty of South India...
+            </p>
+            <a href="kerala-backwaters.html" class="read-more">Explore →</a>
+          </div>
+        </article>
+        <!-- Add more post cards here -->
+      </div>
     </section>
 
+    <!-- Destination Categories -->
+    <section class="destination-categories">
+      <h2>Explore India by Category</h2>
+      <div class="category-grid">
+        <div class="category-card">
+          <i class="fas fa-mountain"></i>
+          <h3>Himalayan Treks</h3>
+          <p>
+            Discover breathtaking mountain trails and spiritual destinations
+          </p>
+        </div>
+        <!-- Add more category cards here -->
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <h2>Traveler Stories</h2>
+      <div class="testimonial-slider">
+        <div class="testimonial-card">
+          <p>
+            "India is a country that touches your soul. Every journey is an
+            adventure!"
+          </p>
+          <div class="traveler-info">
+            <img src="images/traveler1.jpg" alt="Traveler" />
+            <span>- Sarah M., USA</span>
+          </div>
+        </div>
+        <!-- Add more testimonials here -->
+      </div>
+    </section>
+
+    <!-- Subscribe Section -->
     <section class="subscribe">
-        <h2>Join Our Travel Community</h2>
-        <p>Subscribe to receive updates about Indian travel destinations, tips, and cultural insights</p>
-        <form>
-            <input type="email" placeholder="Enter your email address">
-            <button type="submit">Subscribe</button>
-        </form>
+      <h2>Join Our Travel Community</h2>
+      <p>
+        Subscribe to receive updates about Indian travel destinations, tips, and
+        cultural insights
+      </p>
+      <form>
+        <div class="form-group">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Enter your email address" required />
+        </div>
+        <button type="submit">Subscribe Now</button>
+      </form>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Connect With Us</h4>
+          <div class="social-links">
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
         <p>&copy; 2025 Incredible India Travel Blog. All rights reserved.</p>
+      </div>
     </footer>
-</body>
+
+    <script src="script.js"></script>
+  </body>
 </html>
